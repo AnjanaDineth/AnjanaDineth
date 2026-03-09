@@ -1,185 +1,139 @@
-import { useState } from "react";
+<div align="center">
 
-const ASCII_ART = `..............:::::::::::-::::::::::......  
-.........::::::.::....:--------:::::....... 
-.......:::::. ...:     .--------::::........
-...::::::::.   ...=++-  :-------:::::......
-..::::::---    :+%@@@%*. =-------::::::.....
-.::::-----=- .-*%#+--==-+#====-----:::::....
-::::---====+=...:-++*%%#=#++++===----::::...
-:::---===+++*=:=*=++***=.*%#**+++===--::::..
-::----==+++***+.:.:=+=. .-=#%%#**++==--:::..
-:::----==+**###-  ....  -=. -+*****++=--::..
-.::::--=+++=-:        .-+%:     ..:--==-::..
-...::--:.         .-=+*#*:            :-::..
-...:::             .-+=:               :::..
-...::.                                  :...
- ....                                   ....
-   .                                     ...
-                                          . 
-                                            `;
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:00f7ff,100:0d1117&height=120&section=header" width="100%"/>
 
-const DOT = ({ color }) => (
-  <div style={{
-    width: 12, height: 12, borderRadius: "50%",
-    background: color, flexShrink: 0
-  }} />
-);
+<!-- Typing animation -->
+<a href="https://github.com/AnjanaDineth">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=28&pause=1000&color=00F7FF&center=true&vCenter=true&width=600&lines=Hey+there%2C+I'm+Anjana+👋;Builder+%7C+Learner+%7C+Explorer;Building+in+DeFi+%26+Web3+🚀;Always+shipping%2C+always+learning" alt="Typing SVG" />
+</a>
 
-const Row = ({ label, value, valueColor, dots = 18 }) => (
-  <div style={{ display: "flex", alignItems: "baseline", fontSize: 12, lineHeight: "2", gap: 6 }}>
-    <span style={{ color: "var(--cyan)", minWidth: 110, fontSize: 11, flexShrink: 0 }}>{label}</span>
-    <span style={{ color: "var(--dim)", fontSize: 10, letterSpacing: 2, overflow: "hidden", whiteSpace: "nowrap", flex: 1 }}>
-      {".".repeat(dots)}
-    </span>
-    <span style={{ color: valueColor || "var(--text)", fontSize: 12, flexShrink: 0 }}>{value}</span>
-  </div>
-);
+<br/>
 
-const SectionHeader = ({ title, colors }) => (
-  <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 8 }}>
-    <span style={{ color: "var(--orange)", fontSize: 11, fontWeight: 700, letterSpacing: 3, textTransform: "uppercase" }}>
-      {title}
-    </span>
-    <div style={{ flex: 1, height: 1, background: "var(--border)" }} />
-  </div>
-);
+<!-- Badges row -->
+<img src="https://img.shields.io/badge/Location-Sri%20Lanka%20🇱🇰-00f7ff?style=flat-square&labelColor=0d1117"/>
+&nbsp;
+<img src="https://img.shields.io/badge/Focus-DeFi%20%26%20Web3-ff6b9d?style=flat-square&labelColor=0d1117"/>
+&nbsp;
+<img src="https://img.shields.io/badge/Mood-Always%20Building-3fb950?style=flat-square&labelColor=0d1117"/>
+&nbsp;
+<img src="https://komarev.com/ghpvc/?username=AnjanaDineth&style=flat-square&color=00f7ff&label=Profile+Views&labelColor=0d1117"/>
 
-export default function Neofetch() {
-  const [dark, setDark] = useState(true);
+</div>
 
-  const theme = dark ? {
-    "--bg": "#0d1117",
-    "--panel": "#161b22",
-    "--border": "#30363d",
-    "--text": "#e6edf3",
-    "--dim": "#8b949e",
-    "--cyan": "#00f7ff",
-    "--orange": "#ff9500",
-    "--green": "#3fb950",
-    "--pink": "#ff6b9d",
-    "--yellow": "#ffd60a",
-  } : {
-    "--bg": "#f6f8fa",
-    "--panel": "#ffffff",
-    "--border": "#d0d7de",
-    "--text": "#1f2328",
-    "--dim": "#656d76",
-    "--cyan": "#0969da",
-    "--orange": "#bc4c00",
-    "--green": "#1a7f37",
-    "--pink": "#bf3989",
-    "--yellow": "#9a6700",
-  };
+---
 
-  const css = Object.entries(theme).map(([k, v]) => `${k}: ${v}`).join(";");
+## 🧠 About Me
 
-  return (
-    <div style={{ background: "var(--bg)", minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", padding: 20, ...Object.fromEntries(Object.entries(theme).map(([k,v])=>[k,v])) }}>
-      <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'JetBrains Mono', monospace; }
-        @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
-        .cursor { display:inline-block; width:8px; height:14px; background:var(--cyan); animation:blink 1s infinite; border-radius:1px; vertical-align:middle; margin-left:4px; }
-        a { color: inherit; text-decoration: none; }
-        a:hover { color: var(--cyan) !important; }
-      `}</style>
+```ts
+const anjana = {
+  name:     "Anjana Dineth",
+  location: "Sri Lanka 🇱🇰",
+  role:     "Startup Builder & Student",
+  currentFocus: "Decentralized Finance (DeFi)",
 
-      <div style={{ background: "var(--panel)", border: "1px solid var(--border)", borderRadius: 12, overflow: "hidden", maxWidth: 900, width: "100%", boxShadow: dark ? "0 16px 48px rgba(0,0,0,0.5)" : "0 8px 32px rgba(0,0,0,0.1)" }}>
-        
-        {/* Titlebar */}
-        <div style={{ background: "var(--border)", padding: "10px 16px", display: "flex", alignItems: "center", gap: 8 }}>
-          <DOT color="#ff5f57" />
-          <DOT color="#febc2e" />
-          <DOT color="#28c840" />
-          <span style={{ flex: 1, textAlign: "center", fontSize: 12, color: "var(--dim)", marginLeft: -60 }}>
-            anjana@github — bash — 80×40
-          </span>
-          <button
-            onClick={() => setDark(!dark)}
-            style={{ background: "transparent", border: "1px solid var(--border)", color: "var(--dim)", fontFamily: "inherit", fontSize: 11, padding: "3px 10px", borderRadius: 4, cursor: "pointer" }}
-          >
-            {dark ? "☀ light" : "🌙 dark"}
-          </button>
-        </div>
+  interests: [
+    "🔗 Blockchain & Web3",
+    "🤖 Artificial Intelligence",
+    "🎬 Sci-fi & Thriller Movies",
+    "📚 Learning everything possible",
+  ],
 
-        {/* Terminal body */}
-        <div style={{ display: "flex", padding: 24, gap: 28, alignItems: "flex-start" }}>
+  philosophy: "Ship fast. Learn faster.",
+  openTo:     ["Collaborations", "Startup Ideas", "DeFi Projects"],
+};
+```
 
-          {/* ASCII side */}
-          <div style={{ flexShrink: 0 }}>
-            <pre style={{
-              fontSize: 8,
-              lineHeight: 1.2,
-              letterSpacing: "0.4px",
-              color: "var(--cyan)",
-              opacity: 0.85,
-              fontFamily: "'JetBrains Mono', monospace",
-              whiteSpace: "pre",
-            }}>
-              {ASCII_ART}
-            </pre>
-          </div>
+---
 
-          {/* Info side */}
-          <div style={{ flex: 1, minWidth: 0 }}>
-            <div style={{ fontSize: 17, fontWeight: 700, color: "var(--cyan)", marginBottom: 4 }}>
-              anjana@AnjanaDineth
-            </div>
-            <div style={{ color: "var(--border)", fontSize: 12, marginBottom: 16, letterSpacing: 2 }}>
-              ────────────────────────────────────
-            </div>
+## 🚀 Current Project — DeFi
 
-            {/* Current Project */}
-            <div style={{ marginBottom: 14 }}>
-              <SectionHeader title="Current Project" />
-              <Row label="Project" value="Decentralized Finance" valueColor="var(--green)" />
-              <Row label="Status" value="[ actively building ]" valueColor="var(--yellow)" />
-              <Row label="Goal" value="Ship fast. Learn faster." />
-            </div>
+<div align="center">
 
-            {/* Hobbies */}
-            <div style={{ marginBottom: 14 }}>
-              <SectionHeader title="Hobbies & Interests" />
-              <Row label="Learning" value="Always. Everyday." valueColor="var(--pink)" />
-              <Row label="Building" value="Products & startups" />
-              <Row label="Movies" value="Sci-fi & thrillers 🎬" />
-              <Row label="Exploring" value="AI, Web3, new ideas 🌐" />
-              <Row label="Vibe" value="Curious by default" valueColor="var(--yellow)" />
-            </div>
+<table>
+<tr>
+<td width="50%" valign="top">
 
-            {/* GitHub Stats */}
-            <div style={{ marginBottom: 14 }}>
-              <SectionHeader title="GitHub Stats" />
-              <Row label="Profile" value="github.com/AnjanaDineth" />
-              <Row label="Commits" value="[ live on your profile ]" valueColor="var(--green)" />
-              <Row label="Streak" value="[ auto from streak-stats ]" valueColor="var(--pink)" />
-            </div>
+### What I'm building
+> A **Decentralized Finance** platform pushing the boundaries of what's possible on-chain.
 
-            {/* Social */}
-            <div style={{ marginBottom: 14 }}>
-              <SectionHeader title="Social Links" />
-              <Row label="LinkedIn" value="linkedin.com/in/yourprofile" />
-              <Row label="Twitter / X" value="@yourhandle" />
-              <Row label="Email" value="your@email.com" />
-            </div>
+**Stack:**
+- Smart Contracts
+- Web3 / Ethers.js
+- Blockchain Infrastructure
+- DeFi Protocols
 
-            {/* Color blocks */}
-            <div style={{ display: "flex", gap: 4, marginTop: 16 }}>
-              {["#ff5f57","#febc2e","#28c840","#00f7ff","#ff6b9d","#ffd60a","#bf68ff","#e6edf3"].map(c => (
-                <div key={c} style={{ width: 22, height: 22, borderRadius: 3, background: c, border: "1px solid rgba(255,255,255,0.08)" }} />
-              ))}
-            </div>
+</td>
+<td width="50%" valign="top">
 
-            {/* Prompt */}
-            <div style={{ fontSize: 11, color: "var(--dim)", marginTop: 18, display: "flex", alignItems: "center", gap: 6 }}>
-              <span style={{ color: "var(--green)" }}>❯</span>
-              <span>always building, always learning</span>
-              <span className="cursor" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
+### Status
+
+![Status](https://img.shields.io/badge/Status-Actively%20Building-3fb950?style=for-the-badge&labelColor=0d1117)
+
+![Web3](https://img.shields.io/badge/Web3-Ethereum-8B5CF6?style=for-the-badge&logo=ethereum&logoColor=white&labelColor=0d1117)
+![Solidity](https://img.shields.io/badge/Solidity-363636?style=for-the-badge&logo=solidity&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+</td>
+</tr>
+</table>
+
+</div>
+
+---
+
+## 📊 GitHub Stats
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=AnjanaDineth&show_icons=true&theme=tokyonight&bg_color=0d1117&border_color=21262d&title_color=00f7ff&icon_color=ff6b9d&text_color=c9d1d9&hide_border=false&rank_icon=github" width="49%"/>
+
+<img src="https://github-readme-streak-stats.demolab.com?user=AnjanaDineth&theme=tokyonight&background=0d1117&border=21262d&ring=00f7ff&fire=ff6b9d&currStreakNum=c9d1d9&sideNums=c9d1d9&currStreakLabel=00f7ff&sideLabels=8b949e&dates=8b949e" width="49%"/>
+
+<br/><br/>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AnjanaDineth&layout=compact&theme=tokyonight&bg_color=0d1117&border_color=21262d&title_color=00f7ff&text_color=c9d1d9" width="40%"/>
+
+</div>
+
+---
+
+## 📈 Contribution Activity
+
+<div align="center">
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=AnjanaDineth&bg_color=0d1117&color=00f7ff&line=ff6b9d&point=ffd60a&area=true&hide_border=true" width="100%"/>
+</div>
+
+---
+
+## 🌐 Connect With Me
+
+<div align="center">
+
+<a href="https://linkedin.com/in/yourprofile">
+  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a>
+&nbsp;
+<a href="https://twitter.com/yourhandle">
+  <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"/>
+</a>
+&nbsp;
+<a href="mailto:your@email.com">
+  <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+</a>
+&nbsp;
+<a href="https://github.com/AnjanaDineth">
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+
+<br/><br/>
+
+*Always open to interesting conversations — don't hesitate to reach out!*
+
+</div>
+
+---
+
+<div align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:00f7ff,100:0d1117&height=80&section=footer" width="100%"/>
+<sub>✨ Built with passion from Sri Lanka 🇱🇰</sub>
+</div>
