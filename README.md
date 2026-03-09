@@ -45,42 +45,6 @@ const anjana = {
 
 ---
 
-## 🚀 Current Project — DeFi
-
-<div align="center">
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### What I'm building
-> A **Decentralized Finance** platform pushing the boundaries of what's possible on-chain.
-
-**Stack:**
-- Smart Contracts
-- Web3 / Ethers.js
-- Blockchain Infrastructure
-- DeFi Protocols
-
-</td>
-<td width="50%" valign="top">
-
-### Status
-
-![Status](https://img.shields.io/badge/Status-Actively%20Building-3fb950?style=for-the-badge&labelColor=0d1117)
-
-![Web3](https://img.shields.io/badge/Web3-Ethereum-8B5CF6?style=for-the-badge&logo=ethereum&logoColor=white&labelColor=0d1117)
-![Solidity](https://img.shields.io/badge/Solidity-363636?style=for-the-badge&logo=solidity&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-
-</td>
-</tr>
-</table>
-
-</div>
-
----
-
 ## 📊 GitHub Stats
 
 <div align="center">
