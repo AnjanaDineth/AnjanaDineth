@@ -20,7 +20,7 @@ Currently exploring **Web3 & DeFi**, always learning something new.
 &nbsp;
 
 ### connect
-- [LinkedIn](https://linkedin.com/in/anjanadineth)
+- [LinkedIn](https://linkedin.com/in/anjana-dineth)
 - [Twitter / X](https://twitter.com/yourhandle)
 - [Email](mailto:dineththegreat@email.com)
 
