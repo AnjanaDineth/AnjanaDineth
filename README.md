@@ -32,29 +32,6 @@ $ cat about.txt
 
 ---
 
-### `> tech_stack --list`
-
-**Languages**
-
-![Python](https://skillicons.dev/icons?i=python)
-![JavaScript](https://skillicons.dev/icons?i=js)
-![TypeScript](https://skillicons.dev/icons?i=ts)
-![HTML](https://skillicons.dev/icons?i=html)
-![CSS](https://skillicons.dev/icons?i=css)
-
-**Frameworks & Tools**
-
-![React](https://skillicons.dev/icons?i=react)
-![Node.js](https://skillicons.dev/icons?i=nodejs)
-![Git](https://skillicons.dev/icons?i=git)
-![GitHub](https://skillicons.dev/icons?i=github)
-![VS Code](https://skillicons.dev/icons?i=vscode)
-![Linux](https://skillicons.dev/icons?i=linux)
-
-> *(Update this with your actual stack!)*
-
----
-
 ### `> github_stats --verbose`
 
 <div align="center">
